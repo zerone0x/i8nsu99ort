@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer components{
+
+} */
+
+@layer base {
+  :root {
+    --primary-t: #0d0d0d;
+    --secondary-t: #4f5052;
+    --tertiary-t: #e5eaf5;
+    --primary-b: #e5eaf5;
+    --secondary-b: #dae0ef;
+    --tertiary-b: #d0daf1;
+    --quaternary-b: #dadfea;
+    --primary-blue: #0f255c;
+    --secondary-blue: #7c99df;
+    --accent-blue: #255ad4;
+  }
+  :root[data-theme="dark"] {
+    --primary-t: #f2f2f2;
+    --secondary-t: #95979b;
+    --tertiary-t: #e5eaf5;
+    --primary-b: #0a0f1a;
+    --secondary-b: #111725;
+    --tertiary-b: #0e182f;
+    --quaternary-b: #151924;
+    --primary-blue: #a3b9f0;
+    --secondary-blue: #203e83;
+    --accent-blue: #2b5fda;
+  }
+}
+.bg-ywite {
+  background-color: #f7f6f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  @apply transition-colors;
+}
+
+.text-blue-gradient {
+  background: #fca311;
+  background: -webkit-linear-gradient(to right, #fca311, var(--accent-blue));
+  background: linear-gradient(to right, #fca311, var(--accent-blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-full-blue-gradient {
+  background: var(--primary-blue);
+  background: -webkit-linear-gradient(
+    to bottom var(--primary-blue),
+    var(--accent-blue)
+  );
+  background: linear-gradient(
+    to bottom,
+    var(--primary-blue),
+    var(--accent-blue)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-empty-stroke {
+  font-style: italic;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--primary-t);
+  color: transparent;
+}
+
+.text-pink-gradient {
+  background: #ec008c;
+  background: -webkit-linear-gradient(to top, #ec008c, #fc6767);
+  background: linear-gradient(to top, #ec008c, #fc6767);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-green-gradient {
+  background: #11998e;
+  background: -webkit-linear-gradient(to top, #11998e, #38ef7d);
+  background: linear-gradient(to top, #11998e, #38ef7d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-orange-gradient {
+  background: #f12711;
+  background: -webkit-linear-gradient(to top, #f12711, #f5af19);
+  background: linear-gradient(to top, #f12711, #f5af19);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-white-gradient {
+  background: #edf1f4;
+  background: -webkit-linear-gradient(to top, #edf1f4, #c3cbdc);
+  background: linear-gradient(to top, #edf1f4, #c3cbdc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
