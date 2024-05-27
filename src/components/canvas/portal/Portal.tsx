@@ -1,12 +1,10 @@
 import { Environment, PresentationControls, useGLTF } from "@react-three/drei";
 
-import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
 import React from "react";
 
 const Portal = () => {
-  const dracoLoader = new DRACOLoader();
-  dracoLoader.setDecoderPath("/draco-gltf/");
-  const model = useGLTF("/model/portal.glb", dracoLoader);
+  const model = useGLTF("/model/portal.glb");
 
   return (
     <>

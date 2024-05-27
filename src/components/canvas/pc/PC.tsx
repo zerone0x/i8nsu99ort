@@ -1,12 +1,16 @@
 import { Environment, PresentationControls, useGLTF } from "@react-three/drei";
 
-import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
 import React from "react";
 
 const CutePC = () => {
-  const dracoLoader = new DRACOLoader();
-  dracoLoader.setDecoderPath("/draco-gltf/");
-  const model = useGLTF("/model/pc.glb", dracoLoader);
+  // const dracoLoader = new DRACOLoader();
+  // console.log("dracoLoader", dracoLoader);
+  
+  // dracoLoader.setDecoderPath("/draco-gltf/");
+
+  const model = useGLTF("/model/pc.glb");
+
 
   return (
     <>

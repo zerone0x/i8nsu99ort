@@ -110,7 +110,7 @@ export type projectProp = (typeof projectData)[number];
 //   { src: "/social/x.svg", alt: "Twitter", href: "https://www.linkedin.com/in/x/" },
 // ];
 // TODO List all the lang icon I need
-export const getTag = (tag) => {
+export const getTag = (tag: string) => {
   let values = [];
   if (tag == "React") {
     values[0] = "blue";

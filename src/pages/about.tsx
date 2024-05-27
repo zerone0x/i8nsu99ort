@@ -26,7 +26,7 @@ function about() {
           <div>{/* <SocialInfo /> */}</div>
         </div>
         <div className="w-full  lg:w-1/2 flex justify-center">
-          {/* <PCCanvas /> */}
+          <PCCanvas />
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
+"use client";
 import Header from "../ui/header";
-import Footer from "../ui/footer";
 import About from "../pages/about";
 import Skill from "../pages/skill";
 import Project from "../pages/project";
@@ -7,8 +7,14 @@ import Contact from "../pages/contact";
 import AboutMe from "../pages/AboutMe";
 import Experience from "../pages/exp";
 import "../app/globals.css";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
+import { extend } from '@react-three/fiber';
 
 export default function Home() {
+  const dracoLoader = new DRACOLoader();
+  console.log("dracoLoader", dracoLoader);
+  
+  dracoLoader.setDecoderPath("/draco-gltf/");
   return (
     <body className="bg-[#7EC6B5] text-black font-sans h-screen grid grid-rows-[auto_1fr_auto] overflow-hidden">
       <Header />
@@ -27,6 +33,8 @@ export default function Home() {
     </body>
   );
 }
+
+extend ({ DRACOLoader });
 
 // #F3FFF9
 // |
