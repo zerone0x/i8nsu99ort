@@ -33,8 +33,14 @@
     --accent-blue: #2b5fda;
   }
 }
-.bg-ywite {
+.bg-customWite {
   background-color: #f7f6f2;
+}
+.bg-customGreen {
+  background-color: #7ec6b5;
+}
+.bg-customShadowG {
+  background-color: #e5f5ef;
 }
 
 * {

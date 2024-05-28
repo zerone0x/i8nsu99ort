@@ -16,8 +16,7 @@ function Loader() {
 const PC = lazy(() => import("./PC"));
 export default function PCCanvas() {
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
-      {" "}
+    <div className="w-screen h-[70vh] sm:h-[60vh] md:h-[65vh]">
       <Canvas
         shadows
         frameloop="demand"

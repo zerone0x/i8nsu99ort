@@ -8,15 +8,18 @@ import AboutMe from "../pages/AboutMe";
 import Experience from "../pages/exp";
 import "../app/globals.css";
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
-import { extend } from '@react-three/fiber';
+import { extend } from "@react-three/fiber";
 
 export default function Home() {
   const dracoLoader = new DRACOLoader();
-  console.log("dracoLoader", dracoLoader);
-  
   dracoLoader.setDecoderPath("/draco-gltf/");
+
   return (
-    <body className="bg-[#7EC6B5] text-black font-sans h-screen grid grid-rows-[auto_1fr_auto] overflow-hidden">
+    <div
+      className={
+        "bg-customShadowG text-black font-sans h-screen grid grid-rows-[auto_1fr_auto] overflow-hidden"
+      }
+    >
       <Header />
       <div className="overflow-scroll">
         <main className="max-w-7xl mx-auto">
@@ -25,16 +28,14 @@ export default function Home() {
           <Experience />
           <Skill />
           <Project />
-          
           <Contact />
-          {/* <Footer /> */}
         </main>
       </div>
-    </body>
+    </div>
   );
 }
 
-extend ({ DRACOLoader });
+extend({ DRACOLoader });
 
 // #F3FFF9
 // |

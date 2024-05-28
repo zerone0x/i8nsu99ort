@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SocialInfo from "../components/SocialInfo";
 import "../app/globals.css";
+import { RiMenu3Line } from "react-icons/ri";
 
 function header() {
   return (
@@ -11,36 +12,35 @@ function header() {
             trine.dev
           </p>
         </Link>
-        <ul className="flex list-none gap-4 md:gap-9">
-          <li className="transition-colors hover:text-blue-500">
-            <Link href="#about">
+        <ul className="hidden md:flex list-none gap-4 md:gap-9">
+          <li className="transition-colors hover:bg-gradient-to-r from-green-400 to-blue-500 hover:text-transparent hover:bg-clip-text">
+            <Link href="#aboutMe">
               <p>About</p>
             </Link>
           </li>
-          <li className="transition-colors hover:text-blue-500">
-            <Link href="#exp">
+          <li className="transition-colors hover:bg-gradient-to-r from-green-400 to-blue-500 hover:text-transparent hover:bg-clip-text">
+            <Link href="#experience">
               <p>Experience</p>
             </Link>
           </li>
-          {/* <li className="transition-colors hover:text-blue-500">
-          <Link href="#skill">
-            <p>Skill</p>
-          </Link>
-        </li> */}
-          <li className="transition-colors hover:text-blue-500">
+          <li className="transition-colors hover:bg-gradient-to-r from-green-400 to-blue-500 hover:text-transparent hover:bg-clip-text">
             <Link href="#project">
               <p>Project</p>
             </Link>
           </li>
-          <li className="transition-colors hover:text-blue-500">
+          <li className="transition-colors hover:bg-gradient-to-r from-green-400 to-blue-500 hover:text-transparent hover:bg-clip-text">
             <Link href="#contact">
               <p>Contact</p>
             </Link>
           </li>
         </ul>
+        {/* TODO make a popup menu  */}
+        <div className="md:hidden">
+          <RiMenu3Line size={24} className="text-black" />
+        </div>
       </div>
     </nav>
   );
 }
-// TODO media: change to 3 line
+
 export default header;

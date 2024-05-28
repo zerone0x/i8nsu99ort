@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-three/drei": "^9.92.7",
     "@react-three/fiber": "^8.15.12",
+    "@tailwindcss/jit": "^0.1.18",
     "@typeform/embed": "^4.10.0",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "@types/three": "^0.164.1",

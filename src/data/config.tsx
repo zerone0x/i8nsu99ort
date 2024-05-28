@@ -38,10 +38,11 @@ export const expData = [
     // icon: promisLogo,
     date: "October 2020",
     city: "Shanghai",
-    points: ["Worked on Autodesk's inventor team with a focus on Inventor Builds and Infrastructure.",
-     "Built a dashboard to improve the efficiency of the deployment process. Using React. Used by over 300 engineers and handle 1000 checks daily",
-     "Designed and developed a Github pipeline for commits' check for inventor repository.",
-     "Built workers to check pipeline health and send alerts to slack."
+    points: [
+      "Worked on Autodesk's inventor team with a focus on Inventor Builds and Infrastructure.",
+      "Built a dashboard to improve the efficiency of the deployment process. Using React. Used by over 300 engineers and handle 1000 checks daily",
+      "Designed and developed a Github pipeline for commits' check for inventor repository.",
+      "Built workers to check pipeline health and send alerts to slack.",
     ],
   },
   {
@@ -50,11 +51,12 @@ export const expData = [
     // icon: promisLogo,
     date: "October 2020",
     city: "Shanghai",
-    points: ["Frontend Developer on careconnect team, built and shipped features for payment process.",
-     "Rebuilt careconnect's transaction page to the new design system, which increased user using feelings and saved time by 2+%",
-    "Optimized the build infrastructure (webpack, Babel) and improved build speed by over 70%",
-    "Improved code base quality by improving the typing of over 3500 TypeScript files through automation"
-  ],
+    points: [
+      "Frontend Developer on careconnect team, built and shipped features for payment process.",
+      "Rebuilt careconnect's transaction page to the new design system, which increased user using feelings and saved time by 2+%",
+      "Optimized the build infrastructure (webpack, Babel) and improved build speed by over 70%",
+      "Improved code base quality by improving the typing of over 3500 TypeScript files through automation",
+    ],
   },
   {
     title: "Frontend Web Developer",
@@ -67,27 +69,26 @@ export const expData = [
 ];
 export type ExperienceProp = (typeof expData)[number];
 export const skillsData = [
-  {src: "/tech/html5.svg", alt: "HTML5"},
-  {src: "/tech/css3.svg", alt: "CSS3"},
+  { src: "/tech/html5.svg", alt: "HTML5" },
+  { src: "/tech/css3.svg", alt: "CSS3" },
   { src: "/tech/javascript.svg", alt: "JavaScript" },
   { src: "/tech/typescript.svg", alt: "TypeScript" },
   { src: "/tech/reactjs.svg", alt: "React" },
-  { src: "/tech/nextjs.svg", alt: "Next.js"},
-  { src: "/tech/tailwindcss.svg", alt: "Tailwind CSS"},
-  { src: "/tech/sass.svg", alt: "Sass"},
+  { src: "/tech/nextjs.svg", alt: "Next.js" },
+  { src: "/tech/tailwindcss.svg", alt: "Tailwind CSS" },
+  { src: "/tech/sass.svg", alt: "Sass" },
   { src: "/tech/redux.svg", alt: "Redux Toolkit" },
   { src: "/tech/reactquery.svg", alt: "React Query" },
   { src: "/tech/nodedotjs.svg", alt: "Node.js" },
   { src: "/tech/express.svg", alt: "Express" },
   { src: "/tech/postgresql.svg", alt: "Postgresql" },
-  
 ];
 export type SkillsProp = (typeof skillsData)[number];
 
 export const projectData = [
   {
     title: "Movie APP",
-    desc: "Awesome Movie tracking website designed for a pleasant movie recording experience. The site features a clean and modern look, making it easy for users to browse, rate and catch movies to their watchlist.",
+    desc: "Frontend Movie Tracking application for movie lovers, providing a seamless experience for movie searching, rating, watchlist creating. Provides latest Movie/TV trending lists of top trending and rating using TMDB API.",
     // TODO change accurate name according to react icon
     tags: ["React", "Redux", "Typescript"],
     imageURL: "/proj/movie4fun.png",
@@ -97,66 +98,65 @@ export const projectData = [
   {
     title: "Movie fffAPP",
     desc: "Awesome Movie tracking website designed for a pleasant movie recording experience. The site features a clean and modern look, making it easy for users to browse, rate and catch movies to their watchlist.",
-    tags: ["TailwindCss"],
+    tags: ["TailwindCss", "NodeJs", "Typescript"],
     imageURL: "/proj/movie4fun.png",
     GithubLink: "https://github.com/zerone0x/movie4fun",
     LiveLink: "https://movie4fun.netlify.app/",
   },
 ];
 export type projectProp = (typeof projectData)[number];
-// export const socialIcon = [
-//   { src: "/social/linkedin.svg", alt: "Linkedin", href: "https://www.linkedin.com/in/x/" },
-//   { src: "/social/github.svg", alt: "Github", href: "https://www.linkedin.com/in/x/"},
-//   { src: "/social/x.svg", alt: "Twitter", href: "https://www.linkedin.com/in/x/" },
-// ];
-// TODO List all the lang icon I need
+
 export const getTag = (tag: string) => {
   let values = [];
-  if (tag == "React") {
-    values[0] = "blue";
-    values[1] = FaReact;
-  } else if (tag == "Python") {
-    values[0] = "orange";
-    values[1] = FaPython;
-  } else if (tag == "Javascript") {
-    values[0] = "yellow";
-    values[1] = FaJs;
-  } else if (tag == "Sass") {
-    values[0] = "pink";
-    values[1] = FaSass;
-  } else if (tag == "Flask") {
-    values[0] = "green";
-    values[1] = FaPepperHot;
-  } else if (tag == "Laravel") {
-    values[0] = "red";
-    values[1] = FaLaravel;
-  } else if (tag == "Bootstrap") {
-    values[0] = "purple";
-    values[1] = FaBootstrap;
-  } else if (tag == "SQL") {
-    values[0] = "blue";
-    values[1] = FaDatabase;
-  } else if (tag == "Typescript") {
-    values[0] = "#3178C6"; // 蓝色
-    values[1] = SiTypescript;
-  } else if (tag == "Redux") {
-    values[0] = "#764ABC"; // 紫色
-    values[1] = SiRedux;
-  } else if (tag == "Reactquery") {
-    values[0] = "#FF4154"; // 红色
-    values[1] = SiReactquery;
-  } else if (tag == "TailwindCss") {
-    values[0] = "#38B2AC"; // 青色
-    values[1] = RiTailwindCssFill;
-  } else if (tag == "NodeJs") {
-    values[0] = "#339933"; // 绿色
-    values[1] = FaNodeJs;
-  } else if (tag == "Next.js") {
-    values[0] = "gray";
-    values[1] = SiNextdotjs;
-  } else {
-    values[0] = "gray";
-    values[1] = FaCode;
+  switch (tag) {
+    case "React":
+      values[0] = "bg-sky-400";
+      values[1] = FaReact;
+      break;
+    case "Python":
+      values[0] = "bg-yellow-300";
+      values[1] = FaPython;
+      break;
+    case "Javascript":
+      values[0] = "bg-yellow-400";
+      values[1] = FaJs;
+      break;
+    case "Sass":
+      values[0] = "bg-pink-500";
+      values[1] = FaSass;
+      break;
+    case "SQL":
+      values[0] = "bg-blue-400";
+      values[1] = FaDatabase;
+      break;
+    case "Typescript":
+      values[0] = "bg-blue-400";
+      values[1] = SiTypescript;
+      break;
+    case "Redux":
+      values[0] = "bg-purple-400";
+      values[1] = SiRedux;
+      break;
+    case "Reactquery":
+      values[0] = "bg-red-500";
+      values[1] = SiReactquery;
+      break;
+    case "TailwindCss":
+      values[0] = "bg-teal-400";
+      values[1] = RiTailwindCssFill;
+      break;
+    case "NodeJs":
+      values[0] = "bg-green-600";
+      values[1] = FaNodeJs;
+      break;
+    case "Next.js":
+      values[0] = "bg-gray-800";
+      values[1] = SiNextdotjs;
+      break;
+    default:
+      values[0] = "bg-gray-400";
+      values[1] = FaCode;
+      break;
   }
   return values;
 };
@@ -165,58 +165,58 @@ export const SOCIALS: SocialObjects = [
     name: "Github",
     src: "/social/github.svg",
     href: "https://github.com/zerone0x",
-    linkTitle: ` ${SITE.title} on Github`,
+    linkTitle: `Github`,
     active: true,
   },
   // {
   //   name: "Facebook",
   //   href: "https://github.com/zerone0x",
-  //   linkTitle: `${SITE.title} on Facebook`,
+  //   linkTitle: `  Facebook`,
   //   active: false,
   // },
   // {
   //   name: "Instagram",
   //   href: "https://github.com/zerone0x",
-  //   linkTitle: `${SITE.title} on Instagram`,
+  //   linkTitle: `  Instagram`,
   //   active: false,
   // },
   {
     name: "LinkedIn",
     src: "/social/linkedin.svg",
-    href: "https://github.com/zerone0x",
-    linkTitle: `${SITE.title} on LinkedIn`,
+    href: "",
+    linkTitle: `LinkedIn`,
     active: true,
   },
   {
     name: "Twitter",
     src: "/social/x.svg",
     href: "https://github.com/zerone0x",
-    linkTitle: `${SITE.title} on Twitter`,
-    active: true,
+    linkTitle: `Twitter`,
+    active: false,
   },
   {
     name: "Mail",
     src: "/social/mail.svg",
     href: "mailto:zerone0x@trine.dev",
-    linkTitle: `Send an email to ${SITE.title}`,
+    linkTitle: `Email`,
     active: true,
   },
   // {
   //   name: "YouTube",
   //   href: "https://github.com/zerone0x",
-  //   linkTitle: `${SITE.title} on YouTube`,
+  //   linkTitle: `  YouTube`,
   //   active: false,
   // },
   // {
   //   name: "Telegram",
   //   href: "https://github.com/zerone0x",
-  //   linkTitle: `${SITE.title} on Telegram`,
+  //   linkTitle: `  Telegram`,
   //   active: false,
   // },
   // {
   //   name: "Mastodon",
   //   href: "https://github.com/zerone0x",
-  //   linkTitle: `${SITE.title} on Mastodon`,
+  //   linkTitle: `  Mastodon`,
   //   active: false,
   // },
 ];

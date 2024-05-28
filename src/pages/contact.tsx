@@ -4,16 +4,15 @@ import PCCanvas from "../components/canvas/pc/PCCanvas";
 import SocialInfo from "../components/SocialInfo";
 
 function contact() {
-
   return (
     <section id="contact" className="mx-auto my-20 px-4 sm:px-8 lg:max-w-7xl">
-  <header className="text-4xl font-bold text-gray-800 mb-8 text-center">
-    Connected with me
-  </header>
-  <div className="flex justify-center gap-6">
-    <SocialInfo />
-  </div>
-</section>
+      <header className="text-4xl font-bold text-gray-800 mb-8 text-center">
+        Connected with me
+      </header>
+      <div className="flex justify-center gap-6">
+        <SocialInfo />
+      </div>
+    </section>
   );
 }
 
