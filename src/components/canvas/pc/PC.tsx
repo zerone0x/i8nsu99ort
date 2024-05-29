@@ -5,6 +5,7 @@ const CutePC = () => {
   const model = useGLTF("/model/pc.glb");
   const [scale, setScale] = useState(1);
   const [positionY, setPositionY] = useState(0);
+  // const [enableDrag, setEnableDrag] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {

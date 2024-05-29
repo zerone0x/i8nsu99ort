@@ -25,7 +25,7 @@ function about() {
           </p>
           <div>{/* <SocialIcon /> */}</div>
         </div>
-        <div className="w-full lg:w-1/2 flex justify-center">
+        <div className="user-select-none w-full lg:w-1/2 flex justify-center">
           {/* <p>Try to rotate me</p> */}
           <PCCanvas />
         </div>

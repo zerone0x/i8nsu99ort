@@ -17,7 +17,7 @@ const PC = lazy(() => import("./PC"));
 
 export default function PCCanvas() {
   return (
-    <div className="user-select-none w-screen h-[40vh] md:h-[55vh] lg:h-[70vh] ">
+    <div className="w-screen h-[40vh] md:h-[55vh] lg:h-[70vh] ">
       <Canvas
         shadows
         frameloop="demand"
@@ -36,6 +36,7 @@ export default function PCCanvas() {
             enableZoom={false}
             maxPolarAngle={Math.PI / 2} // 允许相机稍微向下
 minPolarAngle={Math.PI / 2} // 允许相机稍微向上
+// enabled={false}
           />
           <PC />
           {/* <Environment preset="sunset" background /> */}

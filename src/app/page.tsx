@@ -18,12 +18,11 @@ export default function Home() {
   return (
     <div
       className={
-        ` bg-customShadowG text-black font-sans h-screen grid grid-rows-[auto_1fr_auto] overflow-hidden `
+        `bg-customShadowG text-black font-sans h-screen grid grid-rows-[auto_1fr_auto] overflow-y-scroll overflow-hidden`
       }
     >
-      <div className={isMenuOpen ? 'opacity-50' : 'overflow-y-scroll'}>
+      <div className={isMenuOpen ? 'opacity-70' : ''}>
       <Header setMenuOpen={setMenuOpen}/>
-      <div className="">
         <main className="max-w-7xl mx-auto">
           <About />
           <AboutMe />
@@ -32,7 +31,6 @@ export default function Home() {
           <Project />
           <Contact />
         </main>
-      </div>
       <footer/>
       </div>
       <MobieMenu isOpen={isMenuOpen} onClose={() => setMenuOpen(false)} />
