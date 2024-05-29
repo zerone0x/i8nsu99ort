@@ -3,16 +3,15 @@ import SocialIcon from "../components/SocialIcon";
 import "../app/globals.css";
 import { RiMenu3Line } from "react-icons/ri";
 import { useState } from "react";
-import MobieMenu from "@/components/MobieMenu";
 
-function header() {
-  const [isMenuOpen, setMenuOpen] = useState(false)
+
+function header({setMenuOpen}: {setMenuOpen:any}) {
   
   return (
     <div>
     <nav className="fixed top-0 z-20 w-full bg-transparent py-5  border-b-2 backdrop-blur-lg selection:border-secondary-b backdrop-filter">
       <div className="flex md:mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 items-center justify-between">
-        <Link href="/">
+        <Link href="#about">
           <p className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 cursor-pointer md:text-xl">
             trine.dev
           </p>
@@ -45,7 +44,7 @@ function header() {
       </div>
       
     </nav>
-    <MobieMenu isOpen={isMenuOpen} onClose={() => setMenuOpen(false)} />
+    
     </div>
   );
 }
