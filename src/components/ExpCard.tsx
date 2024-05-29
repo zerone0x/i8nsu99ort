@@ -2,6 +2,7 @@ import { MdWork } from "react-icons/md";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { ExperienceProp } from "../data/config";
+
 function ExpCard({ expData }: { expData: ExperienceProp }) {
   return (
     <VerticalTimelineElement

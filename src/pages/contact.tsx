@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { LandCanvas } from "../components/canvas";
 import PCCanvas from "../components/canvas/pc/PCCanvas";
-import SocialInfo from "../components/SocialInfo";
+import SocialIcon from "../components/SocialIcon";
 
 function contact() {
   return (
@@ -10,7 +10,7 @@ function contact() {
         Connected with me
       </header>
       <div className="flex justify-center gap-6">
-        <SocialInfo />
+        <SocialIcon />
       </div>
     </section>
   );

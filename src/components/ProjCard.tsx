@@ -14,20 +14,20 @@ function ProjCard({ projData }: { projData: projectProp }) {
         <a
           href={projData.GithubLink}
           target="_blank"
-          className="absolute top-4 right-4 z-20 text-white text-3xl hover:text-gray-300 focus:text-gray-300 active:scale-95 transition duration-300 hover:opacity-75"
+          className="absolute top-4 right-4 z-20 text-white text-3xl hover:text-gray-300 focus:text-gray-300 active:scale-95 transition duration-300 hover:opacity-175"
         >
           <FaGithub />
         </a>
         <div className="group block relative">
           <a href={projData.LiveLink} target="_blank">
             <Image
-              className="rounded-t-2xl transition duration-300 ease-in-out group-hover:brightness-75"
+              className="rounded-t-2xl transition duration-300 ease-in-out group-hover:opacity-55"
               src={projData.imageURL}
               alt={projData.title}
               width={500}
               height={400}
             />
-            <FaExternalLinkAlt className="absolute inset-0 m-auto text-white text-3xl transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:translate-x-4 group-hover:-translate-y-4 shadow-xl" />
+            <FaExternalLinkAlt className="absolute inset-0 m-auto text-white text-3xl transition-all duration-300 ease-in-out shadow-xl" />
           </a>
         </div>
       </div>

@@ -9,7 +9,7 @@ function Skill() {
         {skillsData.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow hover:animate-wiggle"
+            className="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow hover:motion-safe:animate-wiggle"
           >
             <Image src={skill.src} alt={skill.alt} width={80} height={80} />
             <p className="mt-2 text-sm">{skill.alt}</p>

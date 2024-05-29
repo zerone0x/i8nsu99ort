@@ -24,7 +24,7 @@ export const SITE: Site = {
   website: "https://trine.dev/", // replace this with your deployed domain
   author: "zerone0x",
   desc: "A self-motivated Frontend Web Developer, lifelong learner",
-  title: "Trine",
+  title: "trine.dev",
   // ogImage: "zerone0x-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,

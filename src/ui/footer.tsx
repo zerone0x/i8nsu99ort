@@ -1,9 +1,8 @@
-import SocialInfo from "../components/SocialInfo";
+import SocialIcon from "../components/SocialIcon";
 function footer() {
   return (
     <div>
-      Connected with me
-      <SocialInfo />
+      CopyRight@2024 
     </div>
   );
 }

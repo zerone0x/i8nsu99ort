@@ -9,7 +9,7 @@ function project() {
           <h2 className="text-4xl font-bold text-gray-800">Projects.</h2>
           <p className="text-lg text-gray-600 mt-2">My work</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
           {projectData.map((project, index) => (
             <ProjCard key={index} projData={project} />
           ))}

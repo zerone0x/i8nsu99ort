@@ -16,7 +16,7 @@ function Loader() {
 const PC = lazy(() => import("./PC"));
 export default function PCCanvas() {
   return (
-    <div className="w-screen h-[70vh] sm:h-[60vh] md:h-[65vh]">
+    <div className="w-screen h-[70vh] sm:h-[50vh] md:h-[65vh]">
       <Canvas
         shadows
         frameloop="demand"
@@ -26,7 +26,7 @@ export default function PCCanvas() {
           fov: 45,
           near: 0.1,
           far: 200,
-          position: [-4, 3, 6],
+          position: [4, 3, 6],
         }}
       >
         <Suspense fallback={<Loader />}>
