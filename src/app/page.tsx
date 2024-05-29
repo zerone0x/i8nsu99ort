@@ -17,11 +17,11 @@ export default function Home() {
   return (
     <div
       className={
-        "bg-customShadowG text-black font-sans h-screen grid grid-rows-[auto_1fr_auto] overflow-hidden"
+        " bg-customShadowG text-black font-sans h-screen grid grid-rows-[auto_1fr_auto] overflow-hidden"
       }
     >
       <Header />
-      <div className="overflow-scroll">
+      <div className="overflow-y-scroll">
         <main className="max-w-7xl mx-auto">
           <About />
           <AboutMe />
