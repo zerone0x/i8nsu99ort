@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useGLTF, Environment, PresentationControls } from '@react-three/drei';
+import React, { useState, useEffect } from "react";
+import { useGLTF, Environment, PresentationControls } from "@react-three/drei";
 
 const CutePC = () => {
   const model = useGLTF("/model/pc.glb");
@@ -17,15 +17,15 @@ const CutePC = () => {
         setPositionY(-1);
       } else {
         setScale(1.2); // 较大的缩放比例适用于大屏幕
-        setPositionY(-.5); 
+        setPositionY(-0.5);
       }
     };
 
-    window.addEventListener('resize', handleResize);
-    handleResize(); 
+    window.addEventListener("resize", handleResize);
+    handleResize();
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 

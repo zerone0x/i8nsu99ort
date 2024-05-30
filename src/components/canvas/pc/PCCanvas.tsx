@@ -35,8 +35,8 @@ export default function PCCanvas() {
             autoRotate
             enableZoom={false}
             maxPolarAngle={Math.PI / 2} // 允许相机稍微向下
-minPolarAngle={Math.PI / 2} // 允许相机稍微向上
-// enabled={false}
+            minPolarAngle={Math.PI / 2} // 允许相机稍微向上
+            // enabled={false}
           />
           <PC />
           {/* <Environment preset="sunset" background /> */}

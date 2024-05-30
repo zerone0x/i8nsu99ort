@@ -14,26 +14,24 @@ import { useState } from "react";
 export default function Home() {
   const dracoLoader = new DRACOLoader();
   dracoLoader.setDecoderPath("/draco-gltf/");
-  const [isMenuOpen, setMenuOpen] = useState(false)
+  const [isMenuOpen, setMenuOpen] = useState(false);
   return (
     <div
-      className={
-        `bg-customShadowG text-black font-sans h-screen grid grid-rows-[auto_1fr_auto]  overflow-hidden`
-      }
+      className={`bg-customShadowG text-black font-sans h-screen grid grid-rows-[auto_1fr_auto]  overflow-hidden`}
     >
       <div className="overflow-y-scroll">
-      <div className={isMenuOpen ? 'opacity-70' : 'overflow-y-scroll'}>
-      <Header setMenuOpen={setMenuOpen}/>
-        <main className="max-w-7xl mx-auto ">
-          <About />
-          <AboutMe />
-          <Experience />
-          <Skill />
-          <Project />
-          <Contact />
-        </main>
-      <footer/>
-      </div>
+        <div className={isMenuOpen ? "opacity-70" : "overflow-y-scroll"}>
+          <Header setMenuOpen={setMenuOpen} />
+          <main className="max-w-7xl mx-auto ">
+            <About />
+            <AboutMe />
+            <Experience />
+            <Skill />
+            <Project />
+            <Contact />
+          </main>
+          <footer />
+        </div>
       </div>
       <MobieMenu isOpen={isMenuOpen} onClose={() => setMenuOpen(false)} />
     </div>

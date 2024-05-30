@@ -20,11 +20,14 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { BsFiletypeScss } from "react-icons/bs";
+
 export const SITE: Site = {
-  website: "https://trine.dev/", // replace this with your deployed domain
+  website: "https://trine.dev/",
   author: "zerone0x",
   desc: "A self-motivated Frontend Web Developer, lifelong learner",
   title: "trine.dev",
+  // todo replace photo
   // ogImage: "zerone0x-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
@@ -36,7 +39,7 @@ export const expData = [
     title: "Software Engineer",
     companyName: "Autodesk",
     // icon: promisLogo,
-    date: "October 2020",
+    date: "May 2020",
     city: "Shanghai",
     points: [
       "Worked on Autodesk's inventor team with a focus on Inventor Builds and Infrastructure.",
@@ -49,7 +52,7 @@ export const expData = [
     title: "Frontend Developer",
     companyName: "MCT",
     // icon: promisLogo,
-    date: "October 2020",
+    date: "Jun 2020",
     city: "Shanghai",
     points: [
       "Frontend Developer on careconnect team, built and shipped features for payment process.",
@@ -58,14 +61,14 @@ export const expData = [
       "Improved code base quality by improving the typing of over 3500 TypeScript files through automation",
     ],
   },
-  {
-    title: "Frontend Web Developer",
-    companyName: "Upwork",
-    // icon: promisLogo,
-    date: "October 2020",
-    city: "Shanghai",
-    points: ["promis.points", "promis.points"],
-  },
+  // {
+  //   title: "Frontend Web Developer",
+  //   companyName: "Upwork",
+  //   // icon: promisLogo,
+  //   date: "October 2020",
+  //   city: "Shanghai",
+  //   points: ["promis.points", "promis.points"],
+  // },
 ];
 export type ExperienceProp = (typeof expData)[number];
 export const skillsData = [
@@ -90,19 +93,19 @@ export const projectData = [
     title: "Movie APP",
     desc: "Frontend Movie Tracking application for movie lovers, providing a seamless experience for movie searching, rating, watchlist creating. Provides latest Movie/TV trending lists of top trending and rating using TMDB API.",
     // TODO change accurate name according to react icon
-    tags: ["React", "Redux", "Typescript"],
+    tags: ["React", "Typescript", "Redux", "Scss"],
     imageURL: "/proj/movie4fun.png",
     GithubLink: "https://github.com/zerone0x/movie4fun",
     LiveLink: "https://movie4fun.netlify.app/",
   },
-  {
-    title: "Movie fffAPP",
-    desc: "Awesome Movie tracking website designed for a pleasant movie recording experience. The site features a clean and modern look, making it easy for users to browse, rate and catch movies to their watchlist.",
-    tags: ["TailwindCss", "NodeJs", "Typescript"],
-    imageURL: "/proj/movie4fun.png",
-    GithubLink: "https://github.com/zerone0x/movie4fun",
-    LiveLink: "https://movie4fun.netlify.app/",
-  },
+  // {
+  //   title: "Movie fffAPP",
+  //   desc: "Awesome Movie tracking website designed for a pleasant movie recording experience. The site features a clean and modern look, making it easy for users to browse, rate and catch movies to their watchlist.",
+  //   tags: ["TailwindCss", "NodeJs", "Typescript"],
+  //   imageURL: "/proj/movie4fun.png",
+  //   GithubLink: "https://github.com/zerone0x/movie4fun",
+  //   LiveLink: "https://movie4fun.netlify.app/",
+  // },
 ];
 export type projectProp = (typeof projectData)[number];
 
@@ -152,6 +155,10 @@ export const getTag = (tag: string) => {
     case "Next.js":
       values[0] = "bg-gray-800";
       values[1] = SiNextdotjs;
+      break;
+    case "Scss":
+      values[0] = "bg-pink-400";
+      values[1] = BsFiletypeScss;
       break;
     default:
       values[0] = "bg-gray-400";
