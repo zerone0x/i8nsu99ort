@@ -14,16 +14,20 @@ function about() {
           <h1 className="text-6xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 leading-tight mt-2 sm:leading-tight md:leading-tight lg:leading-tight">
             Haolan Zhang
           </h1>
-          <span className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 mt-4">
+          <span className="text-3xl md:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 mt-4">
             Frontend Developer.
           </span>
-          <p className="mt-4 text-base md:text-lg text-gray-600">
-            🚀 Currently specializing in Frontend (React / Next.js)
+          <p className="mt-4 text-base md:text-2xl text-gray-600 pt-5">
+          A self-motivated Frontend Web Developer, lifelong learner
           </p>
-          <p className="text-base md:text-lg text-gray-500 mt-4">
-        
+          <p className="text-base md:text-xl text-gray-500 mt-4">
+          🚀 Currently specializing in Frontend (React / Next.js)
           </p>
-          <div><SocialIcon /></div>
+          <p className="text-base md:text-xl text-gray-500 mt-4">
+          🛠️ Crafting valuable applications
+          </p>
+          <div className="flex justify-start pt-5">
+            <SocialIcon /></div>
         </div>
         <div className="w-full lg:w-1/2 flex justify-center">
           {/* <p>Try to rotate me</p> */}
