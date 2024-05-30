@@ -99,9 +99,17 @@ export const projectData = [
     LiveLink: "https://movie4fun.netlify.app/",
   },
   // {
-  //   title: "Movie fffAPP",
+  //   title: "Coming soon...",
   //   desc: "Awesome Movie tracking website designed for a pleasant movie recording experience. The site features a clean and modern look, making it easy for users to browse, rate and catch movies to their watchlist.",
   //   tags: ["TailwindCss", "NodeJs", "Typescript"],
+  //   imageURL: "/proj/movie4fun.png",
+  //   GithubLink: "https://github.com/zerone0x/movie4fun",
+  //   LiveLink: "https://movie4fun.netlify.app/",
+  // },
+  // {
+  //   title: "Feeds",
+  //   desc: "Coming soon",
+  //   tags: ["NodeJs", "Typescript", "TailwindCss",],
   //   imageURL: "/proj/movie4fun.png",
   //   GithubLink: "https://github.com/zerone0x/movie4fun",
   //   LiveLink: "https://movie4fun.netlify.app/",
@@ -190,7 +198,7 @@ export const SOCIALS: SocialObjects = [
   {
     name: "LinkedIn",
     src: "/social/linkedin.svg",
-    href: "",
+    href: "https://www.linkedin.com/in/manlunzhang/",
     linkTitle: `LinkedIn`,
     active: true,
   },

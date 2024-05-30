@@ -12,7 +12,7 @@ function about() {
         <div className="flex-1">
           <span className="text-xl md:text-2xl font-medium text-gray-700">{`Hey there!👋, I'm-`}</span>
           <h1 className="text-6xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 leading-tight mt-2 sm:leading-tight md:leading-tight lg:leading-tight">
-            Haolan Zhang
+            Manlun Zhang
           </h1>
           <span className="text-3xl md:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 mt-4">
             Frontend Developer.
