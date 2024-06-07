@@ -25,7 +25,7 @@ function AboutMe() {
   I am currently focused on <span className="font-semibold text-indigo-600">Web Development</span>, aiming to build <span className="font-semibold">innovative applications</span> and <span className="font-semibold">automate tasks</span> through efficient coding. When I'm not programming, you might find me skateboarding 🛹 with friends if the weather allows.
 </p>
 <p className="text-xl text-gray-600">
-  I also have a keen interest in staying active and embrace the joy of <a href="https://craftship.xyz/running_page/" target="_blank" className="text-blue-500 hover:bg-gradient-to-r from-green-400 to-blue-500 hover:text-transparent hover:bg-clip-text hover:scale-105 transition duration-300">
+  I also have a keen interest in staying active and embrace the joy of <a href="https://zerone0x.github.io/running_page/" target="_blank" className="text-blue-500 hover:bg-gradient-to-r from-green-400 to-blue-500 hover:text-transparent hover:bg-clip-text hover:scale-105 transition duration-300">
   running
 </a>. 
 </p>
