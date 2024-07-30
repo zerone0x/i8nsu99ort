@@ -20,40 +20,33 @@ function MobieMenu({
       <ul className="mt-14 space-y-6 text-2xl ml-5">
         <li>
           <Link href="#aboutMe">
-            <p
-              className="hover:bg-gradient-to-r from-green-400 to-blue-500 hover:text-transparent hover:bg-clip-text"
-              onClick={onClose}
-            >
+            <p className="mobileHeader" onClick={onClose}>
               About
             </p>
           </Link>
         </li>
         <li>
           <Link href="#experience">
-            <p
-              className="hover:bg-gradient-to-r from-green-400 to-blue-500 hover:text-transparent hover:bg-clip-text"
-              onClick={onClose}
-            >
+            <p className="mobileHeader" onClick={onClose}>
               Experience
             </p>
           </Link>
         </li>
         <li>
           <Link href="#project">
-            <p
-              className="hover:bg-gradient-to-r from-green-400 to-blue-500 hover:text-transparent hover:bg-clip-text"
-              onClick={onClose}
-            >
+            <p className="mobileHeader" onClick={onClose}>
               Project
             </p>
           </Link>
         </li>
+        <li >
+          <a href="https://blog.trine.dev/" title="trine.blog" target="_blank">
+            <p className="mobileHeader">Blog</p>
+          </a>
+        </li>
         <li>
           <Link href="#contact">
-            <p
-              className="hover:bg-gradient-to-r from-green-400 to-blue-500 hover:text-transparent hover:bg-clip-text"
-              onClick={onClose}
-            >
+            <p className="mobileHeader" onClick={onClose}>
               Contact
             </p>
           </Link>
