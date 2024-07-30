@@ -18,16 +18,17 @@ function about() {
             Frontend Developer.
           </span>
           <p className="mt-4 text-base md:text-2xl text-gray-600 pt-5">
-          A self-motivated Frontend Web Developer, lifelong learner
+            A self-motivated Frontend Web Developer, lifelong learner
           </p>
           <p className="text-base md:text-xl text-gray-500 mt-4">
-          🚀 Currently specializing in Frontend (React / Next.js)
+            🚀 Currently specializing in Frontend (React / Next.js)
           </p>
           <p className="text-base md:text-xl text-gray-500 mt-4">
-          🛠️ Crafting valuable applications
+            🛠️ Crafting valuable applications
           </p>
           <div className="flex justify-start pt-5">
-            <SocialIcon /></div>
+            <SocialIcon />
+          </div>
         </div>
         <div className="w-full lg:w-1/2 flex justify-center">
           {/* <p>Try to rotate me</p> */}

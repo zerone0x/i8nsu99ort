@@ -15,22 +15,31 @@ function header({ setMenuOpen }: { setMenuOpen: any }) {
             </p>
           </Link>
           <ul className="hidden md:flex list-none gap-4 md:gap-9">
-            <li className="transition-colors hover:bg-gradient-to-r from-green-400 to-blue-500 hover:text-transparent hover:bg-clip-text">
+            <li className="header">
               <Link href="#aboutMe">
                 <p>About</p>
               </Link>
             </li>
-            <li className="transition-colors hover:bg-gradient-to-r from-green-400 to-blue-500 hover:text-transparent hover:bg-clip-text">
+            <li className="header">
               <Link href="#experience">
                 <p>Experience</p>
               </Link>
             </li>
-            <li className="transition-colors hover:bg-gradient-to-r from-green-400 to-blue-500 hover:text-transparent hover:bg-clip-text">
+            <li className="header">
               <Link href="#project">
                 <p>Project</p>
               </Link>
             </li>
-            <li className="transition-colors hover:bg-gradient-to-r from-green-400 to-blue-500 hover:text-transparent hover:bg-clip-text">
+            <li className="header">
+              <a
+                href="https://blog.trine.dev/"
+                title="trine.blog"
+                target="_blank"
+              >
+                <p>Blog</p>
+              </a>
+            </li>
+            <li className="header">
               <Link href="#contact">
                 <p>Contact</p>
               </Link>

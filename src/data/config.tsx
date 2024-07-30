@@ -89,23 +89,22 @@ export const skillsData = [
 export type SkillsProp = (typeof skillsData)[number];
 
 export const projectData = [
+  // {
+  //   title: "Echo Social APP",
+  //   desc: "Full-stack mastodon like social web application for friends, providing a seamless experience for feeds posting, User profile management, and feeds searching processes, other features like favourite, bookmark feed",
+  //   tags: ["Nextjs", "NodeJs", "Typescript", "TailwindCss"],
+  //   imageURL: "/proj/movie4fun.png",
+  //   GithubLink: "https://github.com/zerone0x/Echo-Frontend",
+  //   LiveLink: "https://echoloop.vercel.app/",
+  // },
   {
     title: "Movie APP",
     desc: "Frontend Movie Tracking application for movie lovers, providing a seamless experience for movie searching, rating, watchlist creating. Provides latest Movie/TV trending lists of top trending and rating using TMDB API.",
-    // TODO change accurate name according to react icon
     tags: ["React", "Typescript", "Redux", "Scss"],
     imageURL: "/proj/movie4fun.png",
     GithubLink: "https://github.com/zerone0x/movie4fun",
     LiveLink: "https://movie4fun.netlify.app/",
   },
-  // {
-  //   title: "Coming soon...",
-  //   desc: "Awesome Movie tracking website designed for a pleasant movie recording experience. The site features a clean and modern look, making it easy for users to browse, rate and catch movies to their watchlist.",
-  //   tags: ["TailwindCss", "NodeJs", "Typescript"],
-  //   imageURL: "/proj/movie4fun.png",
-  //   GithubLink: "https://github.com/zerone0x/movie4fun",
-  //   LiveLink: "https://movie4fun.netlify.app/",
-  // },
   // {
   //   title: "Feeds",
   //   desc: "Coming soon",
@@ -160,8 +159,8 @@ export const getTag = (tag: string) => {
       values[0] = "bg-green-600";
       values[1] = FaNodeJs;
       break;
-    case "Next.js":
-      values[0] = "bg-gray-800";
+    case "Nextjs":
+      values[0] = "bg-gray-300";
       values[1] = SiNextdotjs;
       break;
     case "Scss":
