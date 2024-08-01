@@ -89,14 +89,14 @@ export const skillsData = [
 export type SkillsProp = (typeof skillsData)[number];
 
 export const projectData = [
-  // {
-  //   title: "Echo Social APP",
-  //   desc: "Full-stack mastodon like social web application for friends, providing a seamless experience for feeds posting, User profile management, and feeds searching processes, other features like favourite, bookmark feed",
-  //   tags: ["Nextjs", "NodeJs", "Typescript", "TailwindCss"],
-  //   imageURL: "/proj/movie4fun.png",
-  //   GithubLink: "https://github.com/zerone0x/Echo-Frontend",
-  //   LiveLink: "https://echoloop.vercel.app/",
-  // },
+  {
+    title: "Echo Social APP",
+    desc: "Full-stack Mastodon-like social web app for friends! Share posts with text and images, engage in comments, customize your profile, and search for content easily. Follow others, bookmark favorites, receive notifications.",
+    tags: ["Nextjs", "NodeJs", "Typescript", "TailwindCss"],
+    imageURL: "/proj/echo.png",
+    GithubLink: "https://github.com/zerone0x/Echo-Frontend",
+    LiveLink: "https://echoloop.vercel.app/",
+  },
   {
     title: "Movie APP",
     desc: "Frontend Movie Tracking application for movie lovers, providing a seamless experience for movie searching, rating, watchlist creating. Provides latest Movie/TV trending lists of top trending and rating using TMDB API.",

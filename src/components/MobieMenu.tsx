@@ -39,7 +39,7 @@ function MobieMenu({
             </p>
           </Link>
         </li>
-        <li >
+        <li>
           <a href="https://blog.trine.dev/" title="trine.blog" target="_blank">
             <p className="mobileHeader">Blog</p>
           </a>
