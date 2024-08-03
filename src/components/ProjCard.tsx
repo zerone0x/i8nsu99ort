@@ -5,6 +5,8 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { getTag, projectProp } from "../data/config";
 
 function ProjCard({ projData }: { projData: projectProp }) {
+  const {isTextWhite} = projData;
+  
   return (
     <div
       className="border-2 rounded-2xl overflow-hidden relative"
@@ -14,7 +16,7 @@ function ProjCard({ projData }: { projData: projectProp }) {
         <a
           href={projData.GithubLink}
           target="_blank"
-          className="absolute top-4 right-4 z-20 text-white text-3xl hover:text-gray-300 focus:text-gray-300 active:scale-95 transition duration-300 hover:opacity-175"
+          className={`absolute top-4 right-4 z-20 ${isTextWhite ? 'text-white' : 'text-black'} text-3xl hover:text-gray-400 focus:text-gray-300 active:scale-95 transition duration-300 hover:opacity-175`}
         >
           <FaGithub />
         </a>
@@ -27,7 +29,7 @@ function ProjCard({ projData }: { projData: projectProp }) {
               width={500}
               height={400}
             />
-            <FaExternalLinkAlt className="absolute inset-0 m-auto text-white text-3xl transition-all duration-300 ease-in-out shadow-xl" />
+            <FaExternalLinkAlt className={`absolute inset-0 m-auto ${isTextWhite ? 'text-white' : 'text-black'}  text-3xl transition-all duration-300 ease-in-out shadow-xl`} />
           </a>
         </div>
       </div>

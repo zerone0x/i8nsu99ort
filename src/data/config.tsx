@@ -96,6 +96,7 @@ export const projectData = [
     imageURL: "/proj/echo.png",
     GithubLink: "https://github.com/zerone0x/Echo-Frontend",
     LiveLink: "https://echoloop.vercel.app/",
+    isTextWhite: false,
   },
   {
     title: "Movie APP",
@@ -104,6 +105,7 @@ export const projectData = [
     imageURL: "/proj/movie4fun.png",
     GithubLink: "https://github.com/zerone0x/movie4fun",
     LiveLink: "https://movie4fun.netlify.app/",
+    isTextWhite: true
   },
   // {
   //   title: "Feeds",
