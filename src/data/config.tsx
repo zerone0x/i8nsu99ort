@@ -95,10 +95,10 @@ export const projectData = [
     title: "Echo Social APP",
     desc: "Full-stack Mastodon-like social web app for friends! Share posts with text and images, engage in comments, customize your profile, and search for content easily. Follow others, bookmark favorites, receive notifications.",
     tags: [
-      "Nextjs",
-      "NodeJs",
-      "Expressjs",
-      "Mongo",
+      "Next.Js",
+      "Node.Js",
+      "Express.Js",
+      "MongoDB",
       "Typescript",
       "TailwindCss",
     ],
@@ -166,19 +166,19 @@ export const getTag = (tag: string) => {
       values[0] = "bg-teal-400";
       values[1] = RiTailwindCssFill;
       break;
-    case "NodeJs":
+    case "Node.Js":
       values[0] = "bg-green-500";
       values[1] = FaNodeJs;
       break;
-    case "Nextjs":
+    case "Next.Js":
       values[0] = "bg-gray-300";
       values[1] = SiNextdotjs;
       break;
-    case "Expressjs":
+    case "Express.Js":
       values[0] = "bg-blue-300";
       values[1] = SiExpress;
       break;
-    case "Mongo":
+    case "MongoDB":
       values[0] = "bg-green-300";
       values[1] = SiMongodb;
       break;
