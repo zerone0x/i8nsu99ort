@@ -14,6 +14,8 @@ import {
   FaSass,
 } from "react-icons/fa";
 import {
+  SiExpress,
+  SiMongodb,
   SiNextdotjs,
   SiReactquery,
   SiRedux,
@@ -92,7 +94,14 @@ export const projectData = [
   {
     title: "Echo Social APP",
     desc: "Full-stack Mastodon-like social web app for friends! Share posts with text and images, engage in comments, customize your profile, and search for content easily. Follow others, bookmark favorites, receive notifications.",
-    tags: ["Nextjs", "NodeJs", "Typescript", "TailwindCss"],
+    tags: [
+      "Nextjs",
+      "NodeJs",
+      "Expressjs",
+      "Mongo",
+      "Typescript",
+      "TailwindCss",
+    ],
     imageURL: "/proj/echo.png",
     GithubLink: "https://github.com/zerone0x/Echo-Frontend",
     LiveLink: "https://echoloop.vercel.app/",
@@ -105,7 +114,7 @@ export const projectData = [
     imageURL: "/proj/movie4fun.png",
     GithubLink: "https://github.com/zerone0x/movie4fun",
     LiveLink: "https://movie4fun.netlify.app/",
-    isTextWhite: true
+    isTextWhite: true,
   },
   // {
   //   title: "Feeds",
@@ -158,13 +167,22 @@ export const getTag = (tag: string) => {
       values[1] = RiTailwindCssFill;
       break;
     case "NodeJs":
-      values[0] = "bg-green-600";
+      values[0] = "bg-green-500";
       values[1] = FaNodeJs;
       break;
     case "Nextjs":
       values[0] = "bg-gray-300";
       values[1] = SiNextdotjs;
       break;
+    case "Expressjs":
+      values[0] = "bg-blue-300";
+      values[1] = SiExpress;
+      break;
+    case "Mongo":
+      values[0] = "bg-green-300";
+      values[1] = SiMongodb;
+      break;
+
     case "Scss":
       values[0] = "bg-pink-400";
       values[1] = BsFiletypeScss;
