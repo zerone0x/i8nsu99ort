@@ -104,7 +104,7 @@ export const projectData = [
     ],
     imageURL: "/proj/echo.png",
     GithubLink: "https://github.com/zerone0x/Echo-Frontend",
-    LiveLink: "https://echoloop.vercel.app/",
+    LiveLink: "https://echoloop.buzz/",
     isTextWhite: false,
   },
   {
