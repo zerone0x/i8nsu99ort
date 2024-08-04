@@ -113,7 +113,7 @@ export const projectData = [
     tags: ["React", "Typescript", "Redux", "Scss"],
     imageURL: "/proj/movie4fun.png",
     GithubLink: "https://github.com/zerone0x/movie4fun",
-    LiveLink: "https://movie4fun.netlify.app/",
+    LiveLink: "https://movie4fun.vercel.app//",
     isTextWhite: true,
   },
   // {
