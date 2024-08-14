@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  OrbitControls,
-  Preload,
-  useGLTF,
-  Html,
-  useProgress,
-} from "@react-three/drei";
+import { OrbitControls, Html, useProgress } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useState, lazy, useRef } from "react";
 function Loader() {

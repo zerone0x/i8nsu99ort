@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { projectData } from "../data/config";
 import ProjCard from "../components/ProjCard";
 function project() {

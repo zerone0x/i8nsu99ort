@@ -4,7 +4,6 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { expData } from "../data/config";
-import { MdWork } from "react-icons/md";
 import "../app/globals.css";
 import ExpCard from "../components/ExpCard";
 

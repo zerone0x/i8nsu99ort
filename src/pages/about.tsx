@@ -1,7 +1,3 @@
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
-import PortalCanvas from "../components/canvas/portal/PortalCanvas";
 import PCCanvas from "../components/canvas/pc/PCCanvas";
 import SocialIcon from "../components/SocialIcon";
 
@@ -31,7 +27,6 @@ function about() {
           </div>
         </div>
         <div className="w-full lg:w-1/2 flex justify-center">
-          {/* <p>Try to rotate me</p> */}
           <PCCanvas />
         </div>
       </div>
