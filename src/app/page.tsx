@@ -20,7 +20,7 @@ export default function Home() {
       className={`bg-customShadowG text-black font-sans h-screen grid grid-rows-[auto_1fr_auto]  overflow-hidden`}
     >
       <div className="overflow-y-scroll">
-        <div className={isMenuOpen ? "opacity-70" : "overflow-y-scroll"}>
+        <div className={isMenuOpen ? "opacity-70" : ""}>
           <Header setMenuOpen={setMenuOpen} />
           <main className="max-w-7xl mx-auto ">
             <About />
