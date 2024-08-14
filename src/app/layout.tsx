@@ -8,7 +8,21 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Manlun Zhang - Portfolio",
-  description: "Personal portfolio for Manlun Zhang",
+  description: "Portfolio of Manlun Zhang",
+  openGraph: {
+    title: "Manlun Zhang - Portfolio",
+    description: "Personal portfolio for Manlun Zhang",
+    url: "https://trine.dev",
+    siteName: "Manlun Zhang Creations",
+    images: [
+      {
+        url: "/trine.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Open Graph Image",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
