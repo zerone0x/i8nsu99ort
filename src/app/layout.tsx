@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "Manlun Zhang Creations",
     images: [
       {
-        url: "/trine.png",
+        url: "https://res.cloudinary.com/soberzml/image/upload/v1723646672/trinedev/b63hsyjma8m8atkimma1.png",
         width: 1200,
         height: 630,
         alt: "Open Graph Image",
