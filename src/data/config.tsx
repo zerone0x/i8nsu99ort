@@ -110,20 +110,28 @@ export const projectData = [
   {
     title: "Movie APP",
     desc: "Frontend Movie Tracking application for movie lovers, providing a seamless experience for movie searching, rating, watchlist creating. Provides latest Movie/TV trending lists of top trending and rating using TMDB API.",
-    tags: ["React", "Typescript", "Redux", "Scss"],
+    tags: ["React", "Typescript", "Redux", "Reactquery", "Scss"],
     imageURL: "/proj/movie4fun.png",
     GithubLink: "https://github.com/zerone0x/movie4fun",
     LiveLink: "https://movie4fun.vercel.app//",
     isTextWhite: true,
   },
-  // {
-  //   title: "Feeds",
-  //   desc: "Coming soon",
-  //   tags: ["NodeJs", "Typescript", "TailwindCss",],
-  //   imageURL: "/proj/movie4fun.png",
-  //   GithubLink: "https://github.com/zerone0x/movie4fun",
-  //   LiveLink: "https://movie4fun.netlify.app/",
-  // },
+  {
+    title: "Reddit Telegram Bot",
+    desc: "An alternative FOSS to Zapier or IFTTT is a Telegram bot that delivers the latest posts from Reddit.",
+    tags: ["Python"],
+    imageURL: "/proj/reddit-tg.png",
+    GithubLink: "https://github.com/zerone0x/reddit-telegram-bot",
+    LiveLink: "https://github.com/zerone0x/reddit-telegram-bot/actions",
+  },
+  {
+    title: "Random YTB Player",
+    desc: "Play random youtube videos from various channels.",
+    tags: ["React", "Typescript", "Redux", "Scss"],
+    imageURL: "/proj/random-ytb.png",
+    GithubLink: "https://github.com/zerone0x/RandomYtb",
+    LiveLink: "https://playtb.tech/",
+  },
 ];
 export type projectProp = (typeof projectData)[number];
 

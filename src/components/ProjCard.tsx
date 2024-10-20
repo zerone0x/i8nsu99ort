@@ -22,13 +22,19 @@ function ProjCard({ projData }: { projData: projectProp }) {
         </a>
         <div className="group block relative">
           <a href={projData.LiveLink} target="_blank">
-            <Image
-              className="rounded-t-2xl transition duration-300 ease-in-out group-hover:opacity-55"
-              src={projData.imageURL}
-              alt={projData.title}
-              width={500}
-              height={400}
-            />
+            <div
+              className="image-container"
+              style={{ width: "500px", height: "250px" }}
+            >
+              <Image
+                className="rounded-t-2xl transition duration-300 ease-in-out group-hover:opacity-55"
+                src={projData.imageURL}
+                alt={projData.title}
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+
             <FaExternalLinkAlt
               className={`absolute inset-0 m-auto ${isTextWhite ? "text-white" : "text-black"}  text-3xl transition-all duration-300 ease-in-out shadow-xl`}
             />
