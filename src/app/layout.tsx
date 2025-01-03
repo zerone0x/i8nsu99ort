@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Manlun Zhang - Portfolio",
   description: "Portfolio of Manlun Zhang",
+
   openGraph: {
     title: "Manlun Zhang - Portfolio",
     description: "Portfolio of Manlun Zhang",
@@ -32,7 +33,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="{inter.className}">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="kPuztZokgrH8r8SxkzkoHy2zs9bRR3Qg2fDOuNh3I1M"
+        />
+      </head>
+      <body className={inter.className}>
         {children}
         <Analytics />
         <SpeedInsights />
